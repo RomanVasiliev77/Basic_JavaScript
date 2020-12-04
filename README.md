@@ -1,1 +1,1 @@
-# Basic_JavaScript
+# Домашние задания по курсу Geekbrains Базовый JavaScript
