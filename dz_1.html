@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1.
+        function celsiusToFahrenheit(temperature) {
+            let tempFahrenheit = 9 / 5 * temperature + 32;
+            return tempFahrenheit;
+        };
+
+        let tempCelsius = prompt('Введите температуру по Цельсию');
+        alert(`Температура по Фаренгейту составит ${celsiusToFahrenheit(tempCelsius)}`);
+
+        // 2.
+        let name = 'Василий';
+        let admin = name;
+        alert(admin);
+
+        // 3.
+        // Как я понял оператор +, если один из операндов строка, то JS и          остальные операнды приведёт к строке,
+        // следовательно выражение: 1000 + '108' выдаст значение: 1000108. Произойдёт конкатенация двух строк '1000' и '108'.
+
+        // 4.
+        // Насчёт async и defer почитал, но пока не особо понял что к чему, больше практики и я думаю всё станет яснее.
+    </script>
+</body>
+</html>
