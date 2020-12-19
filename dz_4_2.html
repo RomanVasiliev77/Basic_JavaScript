@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dz_4_2</title>
+</head>
+<body>
+    <script>
+        const basket = {
+            goods: [
+                {
+                    id: 1,
+                    name: 'пиво',
+                    price: 1000,
+                    amount: 2
+                },
+                {
+                    id: 2,
+                    name: 'водка',
+                    price: 1500,
+                    amount: 2
+                }
+            ],
+            countBasketPrice(goods) {
+                let totalPrice = 0;
+                for (let i = 0; i < this.goods.length; i++) {
+                    totalPrice = totalPrice + this.goods[i].price * this.goods[i].amount;
+                }
+                return(totalPrice);
+            }
+        };
+
+        console.log(basket.countBasketPrice());
+    </script>
+</body>
+</html>

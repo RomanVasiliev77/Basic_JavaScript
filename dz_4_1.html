@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function unitsDozensHundreds(num) {
+            if (!Number.isInteger(num) || num < 0 || num > 999) {
+            alert('Значение аргумента должно быть целым числом в диапазоне [0 .. 999].');
+            return {};
+            }
+
+            const obj = {};
+            obj.units = num % 10;
+            obj.dozens = Math.floor(num / 10) % 10;
+            obj.hundreds = Math.floor(num / 100);
+
+            return obj;
+        }
+
+        let number = parseInt(prompt('Введите целое число от 0 до 999'));
+        console.log(unitsDozensHundreds(number));
+        let objNumber = unitsDozensHundreds(number);
+        alert(`Единицы: ${objNumber.units}, десятки: ${objNumber.dozens}, сотни: ${objNumber.hundreds}`);
+    </script>
+</body>
+</html>
